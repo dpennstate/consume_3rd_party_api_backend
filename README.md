@@ -6,4 +6,7 @@ Setup:
     Once you obtain the API key from Open Weather API, you will need to put that key as a value in config.js file in OpenWeatherAPIKey field. It is required to make API calls, otherwise the calls will be denied.
     Run the command node server.js in the terminal for the project
     Your server should now be running. You can confirm by going to http://localhost:27017/ assuming you didn't change any defaults.
-
+    The get command /weather/current will be a post that will access either an area or a zip that are both strings. The area field refers to any city or town.
+    The get command /weather/historical will be a post that will access either an area or a zip that are both strings and a ts field that is a string that is a timestamp in the format YYYY-MM-DD HH:MM:SS. The area field refers to any city or town.
+    The get command /weather/historical-aggregation will be a post that will access either an area or a zip that are both strings and a dt field that is a string that is a date in the format YYYY-MM-DD. The area field refers to any city or town.
+    The get command /weather/summary will be a post that will access either an area or a zip that are both strings. The area field refers to any city or town.
